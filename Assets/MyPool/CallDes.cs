@@ -10,8 +10,11 @@ public class CallDes : MonoBehaviour
     {
         if (!other.CompareTag("Ignore"))
         {
-            generator.destroy(other.gameObject);
+            //Destroy(other.gameObject);
+            //generator.destroy(other.gameObject);
             //generator.pooldestroy(other.gameObject.name, other.GetComponent<PoolBase>());
+
+            generator.Unitypooldestroy(other.gameObject.name, other.GetComponent<Gm>());
         }
     }
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1185,6 +1185,25 @@ MonoBehaviour:
   - {fileID: 1067278100072704, guid: 73bf7522b381ff44db2f2db6e7713465, type: 3}
   - {fileID: 1426638588806760, guid: 809638a935330724db39a9642f9e8e72, type: 3}
   gems:
+  - {fileID: -2946564433170230766, guid: e57281496eb794b869233b35e17b19f6, type: 3}
+  - {fileID: 1710443004363931085, guid: 0debf751836fe4f90902106393f2d6e8, type: 3}
+  - {fileID: 3400796453246174860, guid: d335d163ad5894ad3b28fc579a9db510, type: 3}
+  - {fileID: -8153348757562902045, guid: 2e0ef648708977e43928188a7cf5afc4, type: 3}
+  - {fileID: -6847518868302853011, guid: 82454fb58ed20f045b4afd37bc8f6956, type: 3}
+  - {fileID: -7139100645327984280, guid: adb6955485c134c4f83a8a0cd3e46583, type: 3}
+  - {fileID: 3110652530441110222, guid: 439e1c2c295a72b429f2b233dd60b01c, type: 3}
+  - {fileID: -5009428830101143554, guid: 17789568d9323184499c60ccf737d9d0, type: 3}
+  - {fileID: -690602583988389525, guid: dcf913869f7078d4ca7e2114c75d39ae, type: 3}
+  - {fileID: -948203005544241948, guid: 3d05d741de8a5bd4bb05efac6bdf9785, type: 3}
+  - {fileID: 1849176820813482752, guid: fb37e9b8912f1f440b70931660ac869c, type: 3}
+  - {fileID: 6878249766232328078, guid: 515013a379ae9504b9ee8e8641728ab2, type: 3}
+  - {fileID: -1532185241794897877, guid: c1f6d3943b1074a40985432df25530bf, type: 3}
+  - {fileID: -9054972047316147376, guid: e35d79c26da9bef4bad40e7c8a58ddb3, type: 3}
+  - {fileID: -1314827535334623020, guid: 8f939da7776823a4e8307bb73ec72fac, type: 3}
+  - {fileID: -6648255485790557906, guid: 6814f9d879276644780aa82db62e4d79, type: 3}
+  - {fileID: -8845490031252814859, guid: 73bf7522b381ff44db2f2db6e7713465, type: 3}
+  - {fileID: 9209657436709692157, guid: 809638a935330724db39a9642f9e8e72, type: 3}
+  gms:
   - {fileID: -2946564433170230766, guid: e57281496eb794b869233b35e17b19f6, type: 3}
   - {fileID: 1710443004363931085, guid: 0debf751836fe4f90902106393f2d6e8, type: 3}
   - {fileID: 3400796453246174860, guid: d335d163ad5894ad3b28fc579a9db510, type: 3}
