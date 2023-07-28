@@ -12,9 +12,10 @@ public class CallDes : MonoBehaviour
         {
             //Destroy(other.gameObject);
             //generator.destroy(other.gameObject);
-            //generator.pooldestroy(other.gameObject.name, other.GetComponent<PoolBase>());
 
-            generator.Unitypooldestroy(other.gameObject.name, other.GetComponent<Gm>());
+            generator.pooldestroy(other.gameObject.name, other.GetComponent<PoolBase>());
+
+            //generator.Unitypooldestroy(other.gameObject.name, other.GetComponent<Gm>());
         }
     }
 }

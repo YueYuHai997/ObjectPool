@@ -32,24 +32,24 @@ public class Generator : MonoBehaviour
 
     private void Awake()
     {
-        //destroy += (GameObject _) => { Destroy(_, 1); _.tag = "Ignore"; };
+        //destroy += (GameObject _) => { Destroy(_); _.tag = "Ignore"; };
 
-        //pools = new Pool<PoolBase>[gems.Length];
-        //pooldestroy = (string _, PoolBase y) => { dic[_].DestObject(y, 1); y.tag = "Ignore"; };
-        //for (int i = 0; i < gems.Length; i++)
-        //{
-        //    pools[i] = new Pool<PoolBase>(gems[i], this.transform, 50);
-        //    dic.Add(gems[i].name, pools[i]);
-        //}
-
-        Unitypooldestroy = (string _, Gm y) => { Unitydic[_].Release(y); y.tag = "Ignore"; };
-        gempools = new GemPool[gms.Length];
-        for (int i = 0; i < gempools.Length; i++)
+        pools = new Pool<PoolBase>[gems.Length];
+        pooldestroy = (string _, PoolBase y) => { dic[_].DestObject(y); y.tag = "Ignore"; };
+        for (int i = 0; i < gems.Length; i++)
         {
-            gempools[i] = new GemPool();
-            gempools[i].Init(gms[i], this.transform);
-            Unitydic.Add(gems[i].name, gempools[i]);
+            pools[i] = new Pool<PoolBase>(gems[i], this.transform, 50);
+            dic.Add(gems[i].name, pools[i]);
         }
+
+        //Unitypooldestroy = (string _, Gm y) => { Unitydic[_].Release(y); y.tag = "Ignore"; };
+        //gempools = new GemPool[gms.Length];
+        //for (int i = 0; i < gempools.Length; i++)
+        //{
+        //    gempools[i] = new GemPool();
+        //    gempools[i].Init(gms[i], this.transform);
+        //    Unitydic.Add(gems[i].name, gempools[i]);
+        //}
     }
 
     private void Update()
@@ -58,9 +58,10 @@ public class Generator : MonoBehaviour
         if (TimeSpawn > Interval)
         {
             //CommonGenera();
-            //PoolGenera();
 
-            UnityPoolGenera();
+            PoolGenera();
+
+            //UnityPoolGenera();
 
             TimeSpawn = 0;
         }
